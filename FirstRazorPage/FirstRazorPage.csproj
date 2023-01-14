@@ -10,11 +10,13 @@
   <ItemGroup>
     <None Remove="Microsoft.VisualStudio.Web.CodeGeneration.Design" />
     <None Remove="Pages\Store\" />
+    <None Remove="Model\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.2" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Pages\Store\" />
+    <Folder Include="Model\" />
   </ItemGroup>
 </Project>

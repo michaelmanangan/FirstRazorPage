@@ -1,0 +1,10 @@
+@page
+@model FirstRazorPage.Pages.RegistrationModel
+@{
+}
+
+<form method="post">
+    <div>Name : @Html.TextBoxFor(m => m.FullName)</div>
+    <div>Email: <input asp-for="Email" /></div>
+    <div><input type="submit" /></div>
+</form>

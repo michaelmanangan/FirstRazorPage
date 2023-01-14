@@ -4,8 +4,37 @@
     ViewData["Title"] = "Home page";
 }
 
+
 <div class="text-center">
     <h1 class="display-4">Welcome to Michael's web</h1>
     <p>Razor Page Test</p>
 </div>
+<div>
+    <h3>Server DateTime @DateTime.Now</h3>
+</div>
 
+@{
+    for (int i = 1; i < 6; i++)
+    {
+        @i
+        <br />
+    }
+
+}
+<br />
+
+<br />
+<h3>Accessing your variable property values in CSHTML</h3>
+<br />
+@Model.MyMessage
+
+<br />
+<hr />
+@{
+}
+
+@{
+    int n1 = 100, n2 = 400;
+    int result = n1 + n2;
+    @result<br />
+}

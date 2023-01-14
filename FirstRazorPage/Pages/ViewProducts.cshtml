@@ -1,0 +1,38 @@
+@page
+@model FirstRazorPage.Pages.ViewProductsModel
+@{
+    
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayName("Product Name")
+            </th>
+            <th>
+                @Html.DisplayName("Category Name")
+            </th>
+            <th>
+                @Html.DisplayName("MRP")
+            </th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model.Products)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelitem => item.ProductName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelitem => item.Category)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelitem => item.MRP)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
